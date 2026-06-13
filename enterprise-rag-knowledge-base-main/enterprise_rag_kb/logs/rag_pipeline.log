@@ -1,0 +1,375 @@
+2026-04-18 13:24:57,500 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 13:24:57,500 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-18 13:24:57,501 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 13:24:57,517 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-18 13:24:57,586 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from d:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-18 13:24:57,586 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-18 13:24:57,614 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-18 13:24:57,615 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-18 13:26:45,685 | INFO | src.pipeline.rag_pipeline | Query: 'What is enterprise RAG?'
+2026-04-18 13:26:45,686 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-18 13:26:45,686 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-18 13:27:18,433 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-18 13:27:18,516 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-18 13:27:27,479 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-18 13:27:30,220 | WARNING | src.generation.llm_engine | HF API failed: 404 Client Error: Not Found for url: https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2. Trying fallback...
+2026-04-18 13:27:30,224 | INFO | src.pipeline.rag_pipeline | Query answered in 44.54s | confidence=0.90
+2026-04-18 13:44:16,069 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 13:44:16,069 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-18 13:44:16,069 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 13:44:16,071 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-18 13:44:16,218 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from d:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-18 13:44:16,218 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-18 13:44:16,232 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-18 13:44:16,233 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-18 13:44:16,233 | INFO | src.pipeline.rag_pipeline | Query: 'What is the company return policy?'
+2026-04-18 13:44:16,233 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-18 13:44:16,233 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-18 13:44:32,711 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-18 13:44:32,752 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-18 13:44:41,561 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-18 13:44:43,393 | INFO | src.pipeline.rag_pipeline | Query answered in 27.16s | confidence=0.64
+2026-04-18 13:47:47,760 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 13:47:47,760 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-18 13:47:47,760 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 13:47:47,761 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-18 13:47:47,795 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from d:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-18 13:47:47,795 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-18 13:47:47,805 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-18 13:47:47,805 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-18 13:51:28,410 | INFO | src.pipeline.rag_pipeline | Query: 'What is the company's data privacy policy?'
+2026-04-18 13:51:28,413 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-18 13:51:28,414 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-18 13:52:02,219 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-18 13:52:02,305 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-18 13:52:11,513 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-18 13:52:14,027 | INFO | src.pipeline.rag_pipeline | Query answered in 45.62s | confidence=0.67
+2026-04-18 13:55:32,465 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 13:55:32,466 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-18 13:55:32,466 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 13:55:32,469 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-18 13:55:32,753 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from D:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-18 13:55:32,753 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-18 13:55:32,785 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-18 13:55:32,786 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-18 13:58:26,610 | INFO | src.pipeline.rag_pipeline | Query: 'What are the financial highlights?'
+2026-04-18 13:58:26,611 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-18 13:58:26,611 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-18 14:04:01,576 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 14:04:01,576 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-18 14:04:01,576 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 14:04:01,578 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-18 14:04:01,718 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from D:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-18 14:04:01,718 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-18 14:04:01,738 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-18 14:04:01,738 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-18 14:04:30,292 | INFO | src.pipeline.rag_pipeline | Query: 'What are the financial highlights?'
+2026-04-18 14:04:30,293 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-18 14:04:30,293 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-18 14:04:46,179 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-18 14:04:46,206 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-18 14:06:19,370 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 14:06:19,370 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-18 14:06:19,370 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 14:06:19,371 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-18 14:06:19,508 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from D:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-18 14:06:19,508 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-18 14:06:19,517 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-18 14:06:19,518 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-18 14:06:19,518 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-18 14:06:19,518 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-18 14:06:34,212 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-18 14:06:34,246 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-18 14:06:43,424 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-18 14:08:03,986 | INFO | src.pipeline.rag_pipeline | Query: 'What are the financial highlights for FY2024?'
+2026-04-18 14:08:03,987 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-18 14:08:05,792 | INFO | src.pipeline.rag_pipeline | Query answered in 1.81s | confidence=0.90
+2026-04-18 14:19:21,121 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 14:19:21,121 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-18 14:19:21,122 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-18 14:19:21,123 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-18 14:19:21,165 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from d:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-18 14:19:21,165 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-18 14:19:21,178 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-18 14:19:21,178 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-18 14:20:46,785 | INFO | src.pipeline.rag_pipeline | Query: 'What is the company password policy?'
+2026-04-18 14:20:46,786 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-18 14:20:46,786 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-18 14:21:09,512 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-18 14:21:09,618 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-18 14:21:18,909 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-18 14:21:42,749 | INFO | src.pipeline.rag_pipeline | Query answered in 55.96s | confidence=0.50
+2026-04-24 19:43:11,654 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 19:43:11,656 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-24 19:43:11,656 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 19:43:11,705 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-24 19:44:34,695 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 19:44:34,696 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-24 19:44:34,697 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 19:44:34,707 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-24 19:45:36,924 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 19:45:36,925 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-24 19:45:36,925 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 19:45:36,928 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-24 19:49:02,461 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 19:49:02,462 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-24 19:49:02,463 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 19:49:02,466 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-24 20:03:22,903 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 20:03:22,904 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-24 20:03:22,904 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 20:03:22,906 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-24 20:05:58,909 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 20:05:58,910 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-24 20:05:58,910 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-24 20:05:58,912 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-24 20:05:58,999 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-24 20:05:59,000 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-24 20:05:59,020 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-24 20:05:59,020 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-26 18:21:50,803 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-26 18:21:50,804 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-26 18:21:50,804 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-26 18:21:50,823 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-26 18:21:51,002 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-26 18:21:51,002 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-26 18:21:51,019 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-26 18:21:51,020 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-26 18:24:56,798 | INFO | src.pipeline.rag_pipeline | Query: 'Summarize the knowledge base content.'
+2026-04-26 18:24:56,799 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-26 18:24:56,800 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-26 18:36:32,593 | INFO | src.pipeline.rag_pipeline | Query: 'What is this knowledge base about?'
+2026-04-26 18:36:32,595 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-26 18:36:32,596 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-26 18:37:55,525 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-26 18:37:56,010 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-26 18:38:11,510 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-26 18:38:14,395 | INFO | src.pipeline.rag_pipeline | Query answered in 101.80s | confidence=0.96
+2026-04-26 18:40:17,564 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-26 18:40:17,565 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-26 18:40:17,565 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-26 18:40:17,571 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-26 18:40:17,587 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-26 18:40:17,588 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-26 18:40:17,633 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-26 18:40:42,716 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-26 18:40:42,717 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-26 18:40:42,718 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-26 18:40:42,728 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-26 18:40:42,732 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-26 18:40:42,733 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-26 18:40:42,780 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-26 18:41:14,491 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-26 18:41:14,492 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-26 18:41:14,493 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-26 18:41:14,496 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-26 18:41:14,508 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-26 18:41:14,509 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-26 18:41:14,568 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-27 20:58:40,389 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 20:58:40,390 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-27 20:58:40,390 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 20:58:40,410 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-27 20:58:40,497 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 20:58:40,498 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-27 20:58:40,511 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-27 20:58:40,511 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:01:28,127 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:01:28,127 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-27 21:01:28,127 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:01:28,129 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-27 21:01:28,170 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:01:28,170 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-27 21:01:28,181 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-27 21:01:28,182 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:01:34,314 | INFO | src.pipeline.rag_pipeline | Query: 'What are the data privacy tiers and their requirements?'
+2026-04-27 21:01:34,315 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:01:34,316 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-27 21:02:17,056 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-27 21:02:17,288 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-27 21:02:29,541 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-27 21:02:30,835 | INFO | src.pipeline.rag_pipeline | Query answered in 56.52s | confidence=0.88
+2026-04-27 21:17:05,002 | INFO | src.pipeline.rag_pipeline | Query: 'What were the key financial highlights for FY2024?'
+2026-04-27 21:17:05,002 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:17:05,036 | INFO | src.pipeline.rag_pipeline | Query answered in 0.03s | confidence=0.42
+2026-04-27 21:17:05,037 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-27 21:17:05,037 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:17:05,038 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-27 21:17:13,873 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-27 21:17:13,904 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:22:20,790 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:22:20,790 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-27 21:22:20,791 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:22:20,792 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-27 21:22:20,837 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:22:20,837 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-27 21:22:20,850 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-27 21:22:20,850 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:23:28,354 | INFO | src.pipeline.rag_pipeline | Query: 'What is the password policy for employees?'
+2026-04-27 21:23:28,354 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:23:28,354 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-27 21:23:46,786 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-27 21:23:46,823 | INFO | src.pipeline.rag_pipeline | Query answered in 18.47s | confidence=0.43
+2026-04-27 21:23:46,824 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-27 21:23:46,824 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:23:46,824 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-27 21:23:56,862 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-27 21:23:56,892 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:25:50,142 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:25:50,142 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-27 21:25:50,142 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:25:50,144 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-27 21:25:50,524 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:25:50,524 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-27 21:25:50,538 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-27 21:25:50,538 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:25:50,538 | INFO | src.pipeline.rag_pipeline | Query: 'What is the company return policy?'
+2026-04-27 21:25:50,539 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:25:50,539 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-27 21:31:48,319 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:31:48,319 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-27 21:31:48,320 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:31:48,321 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-27 21:31:48,417 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:31:48,418 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-27 21:31:48,431 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-27 21:31:48,432 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:31:48,432 | INFO | src.pipeline.rag_pipeline | Query: 'What are the password requirements?'
+2026-04-27 21:31:48,432 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:31:48,432 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-27 21:32:19,062 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:32:19,062 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-27 21:32:19,062 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-27 21:32:19,064 | INFO | src.embeddings.embedding_engine | Loaded 40 embeddings from cache
+2026-04-27 21:32:19,145 | INFO | src.vector_store.faiss_store | Loaded vector store: 240 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:32:19,145 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 240 chunks
+2026-04-27 21:32:19,159 | INFO | src.retrieval.retriever | BM25 index built with 240 documents
+2026-04-27 21:32:19,159 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:32:19,160 | INFO | src.pipeline.rag_pipeline | Query: 'What are the password requirements?'
+2026-04-27 21:32:19,160 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:32:19,160 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-27 21:32:36,983 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-27 21:32:37,013 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-27 21:32:48,582 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-27 21:32:51,188 | INFO | src.pipeline.rag_pipeline | Query answered in 32.03s | confidence=0.65
+2026-04-27 21:37:34,009 | INFO | src.pipeline.rag_pipeline | Query: 'What are the password requirements?'
+2026-04-27 21:37:34,010 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:37:34,176 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-27 21:37:46,630 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-27 21:37:47,781 | INFO | src.pipeline.rag_pipeline | Query answered in 13.77s | confidence=0.65
+2026-04-27 21:42:52,025 | INFO | src.ingestion.document_loader | Loading [.TXT]: company_policy.txt
+2026-04-27 21:42:52,078 | INFO | src.pipeline.rag_pipeline | Ingesting 1 documents...
+2026-04-27 21:42:52,082 | INFO | src.ingestion.preprocessor | Preprocessed 1/1 documents
+2026-04-27 21:42:52,083 | INFO | src.ingestion.text_splitter | Split 1 documents -> 12 chunks (avg 12 chunks/doc)
+2026-04-27 21:42:52,084 | INFO | src.pipeline.rag_pipeline | Chunking stats: {'total_chunks': 12, 'avg_length': 394, 'min_length': 309, 'max_length': 485, 'total_chars': 4730, 'unique_docs': 1}
+2026-04-27 21:42:52,087 | INFO | src.embeddings.embedding_engine | Saved 42 embeddings to cache
+2026-04-27 21:42:52,087 | INFO | src.vector_store.faiss_store | Added 12 chunks -> total: 252
+2026-04-27 21:42:52,097 | INFO | src.vector_store.faiss_store | Saved vector store: 252 chunks -> E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:42:52,143 | INFO | src.retrieval.retriever | BM25 index built with 252 documents
+2026-04-27 21:42:52,145 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:42:52,145 | INFO | src.pipeline.rag_pipeline | Ingestion complete in 0.07s: {'status': 'success', 'documents_loaded': 1, 'chunks_added': 12, 'total_chunks': 12, 'time_seconds': 0.07, 'avg_length': 394, 'min_length': 309, 'max_length': 485, 'total_chars': 4730, 'unique_docs': 1}
+2026-04-27 21:42:52,146 | INFO | src.ingestion.document_loader | Loading [.MD]: faq.md
+2026-04-27 21:42:52,152 | INFO | src.pipeline.rag_pipeline | Ingesting 1 documents...
+2026-04-27 21:42:52,155 | INFO | src.ingestion.preprocessor | Preprocessed 1/1 documents
+2026-04-27 21:42:52,156 | INFO | src.ingestion.text_splitter | Split 1 documents -> 9 chunks (avg 9 chunks/doc)
+2026-04-27 21:42:52,157 | INFO | src.pipeline.rag_pipeline | Chunking stats: {'total_chunks': 9, 'avg_length': 286, 'min_length': 178, 'max_length': 370, 'total_chars': 2573, 'unique_docs': 1}
+2026-04-27 21:42:52,161 | INFO | src.embeddings.embedding_engine | Saved 42 embeddings to cache
+2026-04-27 21:42:52,161 | INFO | src.vector_store.faiss_store | Added 9 chunks -> total: 261
+2026-04-27 21:42:52,166 | INFO | src.vector_store.faiss_store | Saved vector store: 261 chunks -> E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:42:52,217 | INFO | src.retrieval.retriever | BM25 index built with 261 documents
+2026-04-27 21:42:52,219 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:42:52,219 | INFO | src.pipeline.rag_pipeline | Ingestion complete in 0.07s: {'status': 'success', 'documents_loaded': 1, 'chunks_added': 9, 'total_chunks': 9, 'time_seconds': 0.07, 'avg_length': 286, 'min_length': 178, 'max_length': 370, 'total_chars': 2573, 'unique_docs': 1}
+2026-04-27 21:42:52,220 | INFO | src.ingestion.document_loader | Loading [.TXT]: financial_report.txt
+2026-04-27 21:42:52,224 | INFO | src.pipeline.rag_pipeline | Ingesting 1 documents...
+2026-04-27 21:42:52,226 | INFO | src.ingestion.preprocessor | Preprocessed 1/1 documents
+2026-04-27 21:42:52,227 | INFO | src.ingestion.text_splitter | Split 1 documents -> 8 chunks (avg 8 chunks/doc)
+2026-04-27 21:42:52,227 | INFO | src.pipeline.rag_pipeline | Chunking stats: {'total_chunks': 8, 'avg_length': 352, 'min_length': 198, 'max_length': 508, 'total_chars': 2819, 'unique_docs': 1}
+2026-04-27 21:42:52,233 | INFO | src.embeddings.embedding_engine | Saved 42 embeddings to cache
+2026-04-27 21:42:52,234 | INFO | src.vector_store.faiss_store | Added 8 chunks -> total: 269
+2026-04-27 21:42:52,240 | INFO | src.vector_store.faiss_store | Saved vector store: 269 chunks -> E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:42:52,288 | INFO | src.retrieval.retriever | BM25 index built with 269 documents
+2026-04-27 21:42:52,289 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:42:52,289 | INFO | src.pipeline.rag_pipeline | Ingestion complete in 0.07s: {'status': 'success', 'documents_loaded': 1, 'chunks_added': 8, 'total_chunks': 8, 'time_seconds': 0.07, 'avg_length': 352, 'min_length': 198, 'max_length': 508, 'total_chars': 2819, 'unique_docs': 1}
+2026-04-27 21:42:52,290 | INFO | src.ingestion.document_loader | Loading [.MD]: technical_guide.md
+2026-04-27 21:42:52,294 | INFO | src.pipeline.rag_pipeline | Ingesting 1 documents...
+2026-04-27 21:42:52,295 | INFO | src.ingestion.preprocessor | Preprocessed 1/1 documents
+2026-04-27 21:42:52,297 | INFO | src.ingestion.text_splitter | Split 1 documents -> 11 chunks (avg 11 chunks/doc)
+2026-04-27 21:42:52,297 | INFO | src.pipeline.rag_pipeline | Chunking stats: {'total_chunks': 11, 'avg_length': 279, 'min_length': 127, 'max_length': 504, 'total_chars': 3068, 'unique_docs': 1}
+2026-04-27 21:42:52,301 | INFO | src.embeddings.embedding_engine | Saved 42 embeddings to cache
+2026-04-27 21:42:52,302 | INFO | src.vector_store.faiss_store | Added 11 chunks -> total: 280
+2026-04-27 21:42:52,311 | INFO | src.vector_store.faiss_store | Saved vector store: 280 chunks -> E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-27 21:42:52,356 | INFO | src.retrieval.retriever | BM25 index built with 280 documents
+2026-04-27 21:42:52,358 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-27 21:42:52,359 | INFO | src.pipeline.rag_pipeline | Ingestion complete in 0.07s: {'status': 'success', 'documents_loaded': 1, 'chunks_added': 11, 'total_chunks': 11, 'time_seconds': 0.07, 'avg_length': 279, 'min_length': 127, 'max_length': 504, 'total_chars': 3068, 'unique_docs': 1}
+2026-04-27 21:43:56,017 | INFO | src.pipeline.rag_pipeline | Query: 'What is the company's return and refund policy?'
+2026-04-27 21:43:56,019 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-27 21:43:56,089 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-27 21:44:07,565 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-27 21:44:08,736 | INFO | src.pipeline.rag_pipeline | Query answered in 12.72s | confidence=1.00
+2026-04-27 21:44:49,197 | INFO | src.pipeline.rag_pipeline | Query: 'What is the company's return and refund policy?'
+2026-04-27 21:44:50,603 | INFO | src.pipeline.rag_pipeline | Query answered in 1.41s | confidence=1.00
+2026-04-28 15:32:21,741 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-28 15:32:21,746 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-28 15:32:21,748 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-28 15:32:21,877 | INFO | src.embeddings.embedding_engine | Loaded 42 embeddings from cache
+2026-04-28 15:32:22,248 | INFO | src.vector_store.faiss_store | Loaded vector store: 280 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-28 15:32:22,250 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 280 chunks
+2026-04-28 15:32:22,357 | INFO | src.retrieval.retriever | BM25 index built with 280 documents
+2026-04-28 15:32:22,359 | INFO | src.pipeline.rag_pipeline | [OK] Cross-encoder reranker configured (lazy load)
+2026-04-28 15:34:30,605 | INFO | src.pipeline.rag_pipeline | Query: 'How does the hybrid retrieval system work?'
+2026-04-28 15:34:30,607 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-28 15:34:30,608 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-28 15:36:37,294 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-28 15:36:37,483 | INFO | src.retrieval.reranker | Loading reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-04-28 15:36:56,517 | INFO | src.retrieval.reranker | [OK] Reranker loaded
+2026-04-28 15:36:58,074 | INFO | src.pipeline.rag_pipeline | Query answered in 147.47s | confidence=1.00
+2026-04-28 16:28:41,226 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-28 16:28:41,226 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-04-28 16:28:41,227 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-04-28 16:28:41,242 | INFO | src.embeddings.embedding_engine | Loaded 42 embeddings from cache
+2026-04-28 16:28:41,302 | INFO | src.vector_store.faiss_store | Loaded vector store: 280 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-04-28 16:28:41,302 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 280 chunks
+2026-04-28 16:28:41,324 | INFO | src.retrieval.retriever | BM25 index built with 280 documents
+2026-04-28 16:29:05,779 | INFO | src.pipeline.rag_pipeline | Query: 'What were the key financial highlights for FY2024?'
+2026-04-28 16:29:05,781 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-28 16:29:05,782 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-28 16:31:25,407 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-28 16:31:26,626 | INFO | src.pipeline.rag_pipeline | Query answered in 140.85s | confidence=0.42
+2026-04-28 16:51:09,372 | INFO | src.pipeline.rag_pipeline | Query: 'What are the main risk factors mentioned in the FY2024 financial report?'
+2026-04-28 16:51:09,373 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-28 16:51:09,475 | INFO | src.pipeline.rag_pipeline | Query answered in 0.10s | confidence=0.42
+2026-04-28 16:51:09,479 | INFO | src.embeddings.embedding_engine | Loaded 42 embeddings from cache
+2026-04-28 16:51:09,482 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-04-28 16:51:09,483 | INFO | src.embeddings.embedding_engine | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-04-28 16:51:18,230 | INFO | src.embeddings.embedding_engine | [OK] Model loaded | Embedding dim: 384
+2026-04-28 16:51:18,350 | INFO | src.embeddings.embedding_engine | Embedding 1 texts (batch_size=32)...
+2026-05-05 10:25:15,656 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-05-05 10:25:15,657 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-05-05 10:25:15,658 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-05-05 10:25:15,732 | INFO | src.embeddings.embedding_engine | Loaded 42 embeddings from cache
+2026-05-05 10:25:16,072 | INFO | src.vector_store.faiss_store | Loaded vector store: 280 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-05-05 10:25:16,073 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 280 chunks
+2026-05-05 10:25:16,170 | INFO | src.retrieval.retriever | BM25 index built with 280 documents
+2026-05-05 10:26:57,019 | INFO | src.pipeline.rag_pipeline | Query: 'What is the password policy for employees?'
+2026-05-05 10:27:00,342 | INFO | src.pipeline.rag_pipeline | Query answered in 3.32s | confidence=0.43
+2026-05-05 13:40:53,811 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-05-05 13:40:53,812 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-05-05 13:40:53,812 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-05-05 13:40:53,816 | INFO | src.embeddings.embedding_engine | Loaded 42 embeddings from cache
+2026-05-05 13:40:54,005 | INFO | src.vector_store.faiss_store | Loaded vector store: 280 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-05-05 13:40:54,005 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 280 chunks
+2026-05-05 13:40:54,030 | INFO | src.retrieval.retriever | BM25 index built with 280 documents
+2026-05-05 16:29:21,574 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-05-05 16:29:21,575 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-05-05 16:29:21,575 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-05-05 16:29:21,590 | INFO | src.embeddings.embedding_engine | Loaded 42 embeddings from cache
+2026-05-05 16:29:21,657 | INFO | src.vector_store.faiss_store | Loaded vector store: 280 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-05-05 16:29:21,657 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 280 chunks
+2026-05-05 16:29:21,669 | INFO | src.retrieval.retriever | BM25 index built with 280 documents
+2026-05-05 17:31:18,413 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-05-05 17:31:18,413 | INFO | src.pipeline.rag_pipeline | Initializing Enterprise RAG Pipeline
+2026-05-05 17:31:18,413 | INFO | src.pipeline.rag_pipeline | ============================================================
+2026-05-05 17:31:18,415 | INFO | src.embeddings.embedding_engine | Loaded 42 embeddings from cache
+2026-05-05 17:31:18,459 | INFO | src.vector_store.faiss_store | Loaded vector store: 280 chunks from E:\4th Semester\Data Science\enterprise_rag_kb\data\vector_store\faiss_index
+2026-05-05 17:31:18,460 | INFO | src.pipeline.rag_pipeline | [OK] Loaded existing index: 280 chunks
+2026-05-05 17:31:18,475 | INFO | src.retrieval.retriever | BM25 index built with 280 documents
